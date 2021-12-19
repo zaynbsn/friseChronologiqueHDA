@@ -1,0 +1,280 @@
+.images{
+    position: absolute;
+    transition: 0.8s;
+}
+.imagesMiddle{
+    top:50%;
+    left:50%;
+    -moz-transition:all 2s;
+    -webkit-transition:all 2s;
+    -o-transition:all 2s;
+    transition:all 1s;
+}
+#prehistoire1{
+    top: 25%;
+    left:5%;
+}
+#prehistoire2{
+    top: 65%;
+    left:15%;
+}
+#prehistoire3{
+    top: 10%;
+    left:30%;
+}
+#prehistoire4{
+    top: 60%;
+    left:50%;
+}
+#prehistoire5{
+    top: 5%;
+    left:60%;
+}
+
+#antiquite1{
+    top: 5%;
+    left:15%;
+}
+#antiquite2{
+    top: 65%;
+    left:15%;
+}
+#antiquite3{
+    top: 10%;
+    left:55%;
+}
+#antiquite4{
+    top: 50%;
+    left:50%;
+}
+
+#moyenAge1{
+    top: 5%;
+    left:12%;
+}
+#moyenAge2{
+    top: 55%;
+    left:15%;
+}
+#moyenAge3{
+    top: 10%;
+    left:55%;
+}
+#moyenAge4{
+    top: 55%;
+    left:60%;
+}
+#tempsModernes1{
+    top: 5%;
+    left:5%;
+}
+#tempsModernes2{
+    top: 50%;
+    left:0%;
+}
+#tempsModernes3{
+    top: 10%;
+    left:35%;
+}
+#tempsModernes4{
+    top: 55%;
+    left:37%;
+}
+#tempsModernes5{
+    top: 5%;
+    left:65%;
+}
+#tempsModernes6{
+    top: 60%;
+    left:70%;
+}
+img{
+    transform: scale(0.7);
+}
+#epoqueComptemp1{
+    top: 5%;
+    left:0%;
+}
+#epoqueComptemp2{
+    top: 50%;
+    left:1%;
+}
+#epoqueComptemp3{
+    top: 10%;
+    left:30%;
+}
+#epoqueComptemp3 img{
+    width: 500px;
+    height: 200px;
+}
+#epoqueComptemp4{
+    top: 55%;
+    left:50%;
+}
+#epoqueComptemp5{
+    top: 5%;
+    left:60%;
+    margin-right: 32px;
+}
+#epoqueComptemp6 img{
+    width: 500px;
+    height: 200px;
+}
+#epoqueComptemp6{
+    top: 1%;
+    left:2%;
+}
+#epoqueComptemp7{
+    top: 60%;
+    left:-2%;
+}
+#epoqueComptemp8{
+    top: 5%;
+    left:45%;
+}
+#epoqueComptemp9 img{
+    width: 500px;
+    height: 200px;
+}
+#epoqueComptemp9{
+    top: 55%;
+    left:37%;
+}
+#epoqueComptemp10{
+    top: 60%;
+    left:72%;
+}
+#epoqueComptemp10 img{
+    width: 400px;
+    height: 20px;
+}
+#epoqueComptemp11{
+    top: 5%;
+    left:5%;
+}
+#epoqueComptemp11 img{
+    width: 500px;
+    height: 250px;  
+}
+#epoqueComptemp12{
+    top: 55%;
+    left:2%;
+}
+#epoqueComptemp13{
+    top: 5%;
+    left:55%;
+}
+#epoqueComptemp14 img{
+    width: 550px;
+    height: 300px;  
+}
+#epoqueComptemp14{
+    top: 60%;
+    left:28%;
+}
+#epoqueComptemp15{
+    top: 55%;
+    left:65%;
+}
+
+.scroll{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: calc(100% - 250px);
+    left: calc(50% - 100px);
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.scroll p{
+    font-size: 1.3em;
+    font-weight: bold;
+    top: 50px;
+    position: relative;
+}
+.scroll img{
+    width: 80%;
+    height: 80%;
+    margin-top: 0px;
+}
+#intro p{
+    color: rgb(39, 39, 39);
+    font-weight: bold;
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin-top: 8px;
+    text-align: center  ;
+}
+
+/* ####################### POPIN ######################## */
+
+.overlay {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0, 0, 0, 0.7);
+transition: opacity 500ms;
+visibility: hidden;
+opacity: 0; 
+z-index: 2;
+}
+.overlayUp {
+visibility: visible;
+opacity: 1;
+z-index: 4;
+}
+
+.popup {
+width: 	600px;
+height: 500px;
+margin: 70px auto;
+padding: 20px;
+background: rgb(238, 238, 238);
+border-radius: 5px;
+position: relative;
+transition: all 0.5s ease-in-out;
+
+}
+
+.popup h2 {
+margin-top: 0;
+color: #333;
+font-family: Tahoma, Arial, sans-serif;
+/* border: 1px solid blue; */
+text-align: center;
+}
+.popup .close {
+position: absolute;
+top: 20px;
+right: 30px;
+transition: all 200ms;
+font-size: 30px;
+font-weight: bold;
+text-decoration: none;
+color: rgba(97, 97, 97, 0.63);
+}
+.popup .close:hover {
+color: rgb(0, 0, 0);
+cursor: pointer;
+}
+.popinImg{
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    object-fit: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+.popinImg img{
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    transform: scale(1.1);
+}
